@@ -14,6 +14,7 @@ This project implements a comprehensive Diffie-Hellman key exchange protocol sim
 - [Algorithms/Mathematical Concepts Used](#algorithmsmathematical-concepts-used)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
+- [Note](#note)
 
 ## Installation
 The simulator requires Python 3.6 (or higher), and Jupyter Notebook.
@@ -162,3 +163,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - The fundamental work of Whitfield Diffie and Martin Hellman in public-key cryptography
 - Gary L. Miller and Michael O. Rabin for their contributions to primality testing
 - The cryptographic community for continued research in secure communications
+
+## Note
+| AI was used to generate most of the docstrings and inline comments in the code. |
+|:--:|
