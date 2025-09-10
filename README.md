@@ -1,9 +1,11 @@
 # Diffie-Hellman Key Exchange Simulator
 
 ## Project Description
+
 This project implements a comprehensive Diffie-Hellman key exchange protocol simulator with interactive capabilities. The simulator demonstrates the secure exchange of cryptographic keys between two parties over an insecure channel, while also illustrating the potential vulnerability to man-in-the-middle attacks. It incorporates advanced mathematical concepts including Miller-Rabin primality testing and efficient primitive root discovery using Carmichael's theorem.
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -16,7 +18,10 @@ This project implements a comprehensive Diffie-Hellman key exchange protocol sim
 - [Acknowledgments](#acknowledgments)
 - [Note](#note)
 
+---
+
 ## Installation
+
 The simulator requires Python 3.6 (or higher), and Jupyter Notebook.
 * Simply run the diffie-hellman_key_exchange_simulator.ipynb file via Jupyter Notebook:
      ```bash
@@ -24,6 +29,7 @@ The simulator requires Python 3.6 (or higher), and Jupyter Notebook.
      ```
 
 ## Usage
+
 The simulator provides an interactive notebook interface that guides users through the Diffie-Hellman Key Exchange process:
 
 1. Select or enter a prime number
@@ -33,6 +39,7 @@ The simulator provides an interactive notebook interface that guides users throu
 5. Optionally simulate a man-in-the-middle attack
 
 ## Features
+
 - **Secure Prime Generation**: Select from sample primes or enter custom primes
 - **Primitive Root Discovery**: Automatically identifies valid primitive roots for the selected prime
 - **Comprehensive Miller-Rabin Primality Testing**: Uses 40 rounds of testing for high-confidence primality verification
@@ -43,6 +50,7 @@ The simulator provides an interactive notebook interface that guides users throu
 - **Efficient Implementation**: Uses techniques like memoization and early termination for performance
 
 ## Methodology
+
 The simulator follows this process flow:
 
 1. **Prime Selection**:
@@ -73,6 +81,7 @@ The simulator follows this process flow:
 ## Examples
 
 ### Example 1: Different Forged Secret Keys
+
 **Inputs:**
 - Prime: 23
 - Primitive Root: 5
@@ -93,6 +102,7 @@ The simulator follows this process flow:
 In this scenario, the forged keys lead Ram and Shyam to compute different shared secrets (18 ≠ 11). This mismatch could potentially make them suspect an attack due to encryption/decryption failures.
 
 ### Example 2: Same Forged Secret Keys
+
 **Inputs:**
 - Prime: 23
 - Primitive Root: 5
@@ -113,6 +123,7 @@ In this scenario, the forged keys lead Ram and Shyam to compute different shared
 In this scenario, the forged keys lead Ram and Shyam to compute the same shared secret (1), and Hari can compute this same value. This makes the attack completely undetectable, demonstrating the vulnerability of unauthenticated Diffie-Hellman key exchange.
 
 ## References
+
 1. Diffie, W., & Hellman, M. E. (1976). New directions in cryptography. IEEE Transactions on Information Theory, 22(6), 644-654.
 2. Miller, G. L. (1975). Riemann's Hypothesis and Tests for Primality. Journal of Computer and System Sciences, 13(3), 300-317.
 3. Rabin, M. O. (1980). Probabilistic algorithm for testing primality. Journal of Number Theory, 12(1), 128-138.
@@ -120,6 +131,7 @@ In this scenario, the forged keys lead Ram and Shyam to compute the same shared 
 5. Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (1996). Handbook of Applied Cryptography. CRC Press.
 
 ## Dependencies
+
 The simulator uses only Python standard libraries:
 - `math`: For mathematical operations
 - `random`: For generating random numbers in primality testing
@@ -128,6 +140,7 @@ The simulator uses only Python standard libraries:
 - `dataclasses`: For the `DHParameters` class
 
 ## Algorithms/Mathematical Concepts Used
+
 1. **Diffie-Hellman Key Exchange Protocol**:
    - Based on the discrete logarithm problem in modular arithmetic
    - Uses the property that (g^a)^b mod p = (g^b)^a mod p
@@ -157,13 +170,16 @@ The simulator uses only Python standard libraries:
    - Shows how an attacker can establish separate keys with both parties
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
+
 - The fundamental work of Whitfield Diffie and Martin Hellman in public-key cryptography
 - Gary L. Miller and Michael O. Rabin for their contributions to primality testing
 - The cryptographic community for continued research in secure communications
 
 ## Note
+
 | AI was used to generate most of the docstrings and inline comments in the code. |
 |:--:|
